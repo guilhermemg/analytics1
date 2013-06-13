@@ -1,3 +1,5 @@
+# script to numeric variables in adult.csv
+
 # reading data
 data = read.csv("Lab1/adult.csv")
 
@@ -71,7 +73,7 @@ education_num = data$education.num
 
 summary(education_num)
 boxplot(education_num)
-hist(education_num, nclass=4)
+h = hist(education_num, nclass=4)
 
 education_num_min = min(education_num) # minimum
 education_num_max = max(education_num) # maximum
